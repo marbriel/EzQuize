@@ -1,0 +1,56 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.EzQuize" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/yellow_bg</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="FloatingLabel">
+        <item name="android:background">@drawable/label_float_btn</item>
+        <item name="android:textColor">@color/dark_bg</item>
+    </style>
+
+    <style name="RadioButtonColorTrue" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorAccent">@color/green</item>
+        <item name="android:textColorPrimary">@color/green</item>
+    </style>
+    <style name="RadioButtonColorFalse" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorAccent">@color/red</item>
+        <item name="android:textColorPrimary">@color/red</item>
+    </style>
+    <style name="RadioButtonSelected" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorAccent">@color/yellow_notif</item>
+        <item name="android:textColorPrimary">@color/yellow_notif</item>
+    </style>
+
+    <style name="AppTheme.TextInputLayout.OutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/dark_bg</item>
+        <item name="hintTextColor">@color/dark_bg</item>
+    </style>
+
+    <style name="Secondary.TextInputLayout.OutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/yellow_notif</item>
+        <item name="hintTextColor">@color/yellow_notif</item>
+    </style>
+
+
+    <!-- Border for material edit text -->
+    <style name="editTextPrimaryColor" parent="">
+        <item name="colorPrimary">@color/dark_bg</item>
+    </style>
+
+    <!-- Border for material edit text -->
+    <style name="editTextSecondaryColor" parent="">
+        <item name="colorPrimary">@color/yellow_notif</item>
+    </style>
+
+</resources>

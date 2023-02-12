@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_bg"
+    android:backgroundTint="@color/dark_bg"
+    tools:context=".TrueOrFalseFragment" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+        <RadioGroup
+            android:id="@+id/key_bipolar_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/true_bipolar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_1"
+                android:layout_marginTop="@dimen/margin_1"
+                android:layout_marginEnd="@dimen/margin_2"
+                android:layout_marginBottom="@dimen/margin_1"
+                android:layout_weight="1"
+                android:background="@drawable/key_true_bg"
+                android:button="@drawable/radio_button_padding"
+                android:text="@string/true_choice"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:theme="@style/RadioButtonColorTrue"/>
+
+            <RadioButton
+                android:id="@+id/false_bipolar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_2"
+                android:layout_marginTop="@dimen/margin_1"
+                android:layout_marginEnd="@dimen/margin_1"
+                android:layout_marginBottom="@dimen/margin_1"
+                android:layout_weight="1"
+                android:background="@drawable/key_false_bg"
+                android:button="@drawable/radio_button_padding"
+                android:text="@string/false_choice"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:theme="@style/RadioButtonColorFalse"/>
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
